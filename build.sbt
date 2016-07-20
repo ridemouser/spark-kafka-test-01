@@ -10,11 +10,12 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-streaming" % sparkVersion % "provided",
   "org.apache.kafka" %% "kafka" % kafkaVersion % "provided",
   "org.apache.kafka" % "kafka-clients" % kafkaVersion % "provided",
-  "com.databricks" % "spark-xml_2.10" % "0.3.3",
-  "org.apache.spark" % "spark-sql_2.10" % "1.6.1",
-  "org.json" % "json" % "20160212",
+  "com.databricks" % "spark-xml_2.10" % "0.3.3" % "provided",
+  "org.apache.spark" % "spark-sql_2.10" % "1.6.1" % "provided",
+  "org.json" % "json" % "20160212" % "provided",
   ("org.apache.spark" %% "spark-streaming-kafka" % sparkVersion) exclude ("org.spark-project.spark", "unused")
 )
+
 
 
 resolvers ++= Seq(
