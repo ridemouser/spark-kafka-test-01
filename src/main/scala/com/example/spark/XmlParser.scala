@@ -95,7 +95,8 @@ object XmlParser {
        })
     
     }) 
-      
+     ssc.start()
+    ssc.awaitTermination() 
       
       
       ///////////////////////////
