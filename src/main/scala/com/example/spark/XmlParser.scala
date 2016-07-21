@@ -64,9 +64,12 @@ object XmlParser {
         )
       })
     
+      xmlMessage.print()
+      
      /////////////////////////////////////////
       
-    jsonStream.foreachRDD( rdd => {
+    /*
+     * jsonStream.foreachRDD( rdd => {
     System.out.println("# events = " + rdd.count())
     
     rdd.foreachPartition( partition => {
@@ -94,7 +97,7 @@ object XmlParser {
         producer.close()
        })
     
-    }) 
+    }) */
      ssc.start()
     ssc.awaitTermination() 
       
